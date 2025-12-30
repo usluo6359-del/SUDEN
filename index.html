@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAYFA </title>
+    <style>
+        :root {
+            --primary-color: #b5836d;
+            --bg-color: #f7f3f0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 350px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        /* Fotoğraf Alanı ve Dönme Efekti */
+        .profile-img-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 3px solid var(--primary-color);
+            overflow: hidden;
+            /* Dönme Animasyonu Buradan Başlar */
+            animation: spin 10s linear infinite;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Bilgiler */
+        h1 {
+            margin: 10px 0 5px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        .location {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .interests {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            font-size: 12px;
+            color: var(--primary-color);
+        }
+
+        /* Buton */
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #a0725c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-img-container">
+            <img src=".İMAGES/SUDE.jpeg" alt="Profil Fotoğrafı">
+        </div>
+
+        <h1>SUDENNN HANIMA ÖZELL</h1>
+        <div class="location"></div>
+
+        <p class="bio">
+    TANISMAMIZ OZELL BIR SAYFA YAPAYIM DEDIM O YUZDEN BU LINKE TIKLADIGIN ICIN TESSEKKUR EDERIMM
+        </p>
+
+        
+        <a href="#" class="btn">Mesaj Gönder</a>
+    </div>
+
+</body>
+</html>
